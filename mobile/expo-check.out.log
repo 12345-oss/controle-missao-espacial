@@ -1,0 +1,7 @@
+
+> space-mission-mobile@1.0.0 web
+> C:\Progra~1\nodejs\node.exe node_modules/expo/bin/cli start --web --port 8082 --clear
+
+Starting project at C:\Users\hmk08\Documents\Codex\2026-06-09\codex-por-favor-me-ajude-com\outputs\controle-missao-espacial\mobile
+› Port 8082 is being used by another process
+› Skipping dev server
