@@ -1,6 +1,8 @@
 backend/target/
 backend/data/
 backend/*.log
+mobile/*.log
+*.log
 mobile/node_modules/
 mobile/.expo/
 mobile/dist/
