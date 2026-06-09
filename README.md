@@ -9,8 +9,7 @@ Solução integrada para a disciplina **Advanced Programming And Mobile Dev**, c
 
 ## Integrantes
 
-| Nome completo | RM |
-| --- | --- |
+
 | Henrique Khouri | 555572 |
 | Rodrigo Philippi | 557594 |
 
@@ -248,87 +247,8 @@ $env:EXPO_PUBLIC_API_URL="http://192.168.0.20:8080/api"
 npm.cmd run start
 ```
 
-## Checklist final da entrega
 
-Use esta lista antes de enviar o link:
 
-- Backend abre com `mvn spring-boot:run`.
-- API responde em `http://localhost:8080/api/sensors`.
-- H2 está configurado em modo file no `application.properties`.
-- Mobile abre com `npm.cmd run web`.
-- App abre em `http://localhost:8082`.
-- Tela `Nova leitura` envia POST para o backend.
-- Tela `Sensores` mostra o dado salvo por GET.
-- README contém nome completo e RM de todos os integrantes.
-- Projeto foi enviado para o GitHub com commits.
 
-## Roteiro de demonstração para o professor
 
-1. Abrir o backend com `mvn spring-boot:run`.
-2. Mostrar que o H2 está em file mode no `application.properties`.
-3. Abrir `http://localhost:8080/api/sensors` e mostrar o GET funcionando.
-4. Abrir o app mobile.
-5. Navegar pelas telas `Missão`, `Sensores`, `Sistemas`, `Eventos` e `Alertas`.
-6. Entrar em `Cadastrar leitura`.
-7. Enviar uma nova leitura.
-8. Voltar para `Sensores` e mostrar que a leitura apareceu.
-9. Atualizar o GET no navegador/Postman para mostrar que o dado veio do backend.
-10. Mostrar o repositório no GitHub com commits.
 
-## Publicação no GitHub
-
-> Nao e necessario usar Word para esta entrega. O arquivo `README.md` ja e o documento principal do projeto e sera exibido automaticamente pelo GitHub.
-
-### 1. Criar o repositório
-
-No GitHub:
-
-1. Clique em **New repository**.
-2. Nome sugerido: `controle-missao-espacial`.
-3. Deixe como público ou privado, conforme orientação do professor.
-4. Não marque para criar README, `.gitignore` ou license, porque o projeto já tem esses arquivos.
-
-### 2. Versionar localmente
-
-Na pasta raiz do projeto:
-
-```powershell
-git init
-git config user.name "Henrique Khouri e Rodrigo Philippi"
-git config user.email "SEU-EMAIL-DO-GITHUB"
-git add .
-git commit -m "Entrega controle de missao espacial"
-git branch -M main
-```
-
-### 3. Conectar ao GitHub
-
-Troque `SEU-USUARIO` pelo seu usuário do GitHub:
-
-```powershell
-git remote add origin https://github.com/SEU-USUARIO/controle-missao-espacial.git
-git push -u origin main
-```
-
-Se o GitHub pedir login, entre com seu usuario e senha/token conforme a tela solicitar.
-
-### 4. Conferir antes de entregar
-
-Antes de enviar o link ao professor, confira:
-
-- O README tem nome completo e RM dos integrantes.
-- O repositório tem as pastas `backend` e `mobile`.
-- A pasta `node_modules` não foi enviada.
-- A pasta `target` não foi enviada.
-- O app mobile consegue fazer POST.
-- O app mobile consegue visualizar dados via GET.
-
-## Sugestão de texto para entrega
-
-```text
-Professor, segue o projeto Controle de Missão Espacial.
-
-O projeto contém backend em Java com Spring Boot, banco H2 em file mode e aplicativo mobile em React Native com TypeScript. A integração entre mobile e API foi implementada com requisições GET e POST.
-
-Link do GitHub: COLE_AQUI_O_LINK_DO_REPOSITORIO
-```
