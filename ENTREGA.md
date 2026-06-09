@@ -71,6 +71,4 @@ http://localhost:8082
 | README com nome/RM | OK |
 | GitHub com commits | Pendente publicar |
 
-## Pendências antes de enviar
 
-Suba o projeto para o GitHub e envie o link ao professor.
