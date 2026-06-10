@@ -53,6 +53,34 @@ http://localhost:8082
 - Voltar para `Sensores`
 - Confirmar que a leitura apareceu
 
+## Como o professor pode abrir em outra máquina
+
+```powershell
+git clone https://github.com/12345-oss/controle-missao-espacial.git
+cd controle-missao-espacial
+```
+
+Terminal 1:
+
+```powershell
+cd backend
+mvn spring-boot:run
+```
+
+Terminal 2:
+
+```powershell
+cd mobile
+npm.cmd install
+npm.cmd run web
+```
+
+Depois abrir:
+
+```text
+http://localhost:8082
+```
+
 ## Requisitos conferidos
 
 | Requisito | Status |

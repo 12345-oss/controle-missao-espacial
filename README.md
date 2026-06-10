@@ -138,6 +138,44 @@ A API ficará disponível em:
 http://localhost:8080/api
 ```
 
+## Como o professor pode executar o projeto
+
+Em uma máquina com Git, Java 17, Maven e Node.js instalados, o professor pode rodar assim:
+
+```powershell
+git clone https://github.com/12345-oss/controle-missao-espacial.git
+cd controle-missao-espacial
+```
+
+Terminal 1, backend:
+
+```powershell
+cd backend
+mvn spring-boot:run
+```
+
+API do backend:
+
+```text
+http://localhost:8080/api/sensors
+```
+
+Terminal 2, mobile/web:
+
+```powershell
+cd mobile
+npm.cmd install
+npm.cmd run web
+```
+
+App mobile aberto no navegador:
+
+```text
+http://localhost:8082
+```
+
+Para demonstrar a integração, abra `Nova leitura`, envie uma leitura por POST e depois confira a tela `Sensores`, que carrega os dados por GET.
+
 Console do H2:
 
 ```text
